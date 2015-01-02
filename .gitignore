@@ -24,3 +24,7 @@ Temporary Items
 Session.vim
 .netrwhist
 *~
+
+# Build system
+build
+*.dSYM
