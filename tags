@@ -1,0 +1,45 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCUMULATOR_DEFAULT	simpletron.h	/^#define ACCUMULATOR_DEFAULT /;"	d
+ACCUMULATOR_OVERFLOW	simpletron.h	/^#define ACCUMULATOR_OVERFLOW /;"	d
+ADD	simpletron.h	/^#define ADD /;"	d
+BRANCH	simpletron.h	/^#define BRANCH /;"	d
+BRANCHNEG	simpletron.h	/^#define BRANCHNEG /;"	d
+BRANCHZERO	simpletron.h	/^#define BRANCHZERO /;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -pedantic$/;"	m
+DIVIDE	simpletron.h	/^#define DIVIDE /;"	d
+DIVIDE_BY_ZERO	simpletron.h	/^#define DIVIDE_BY_ZERO /;"	d
+EXECUTABLE	Makefile	/^EXECUTABLE=output$/;"	m
+FATAL_ERROR_STRING	simpletron.h	/^#define FATAL_ERROR_STRING /;"	d
+GENERAL_ERROR	simpletron.h	/^#define GENERAL_ERROR /;"	d
+HALT	simpletron.h	/^#define HALT /;"	d
+INSTRUCTION_COUNTER_DEFAULT	simpletron.h	/^#define INSTRUCTION_COUNTER_DEFAULT /;"	d
+INSTRUCTION_REGISTER_DEFAULT	simpletron.h	/^#define INSTRUCTION_REGISTER_DEFAULT /;"	d
+INVALID_OP_CODE	simpletron.h	/^#define INVALID_OP_CODE /;"	d
+LDFLAGS	Makefile	/^LDFLAGS=$/;"	m
+LOAD	simpletron.h	/^#define LOAD /;"	d
+MEM_SIZE	simpletron.h	/^#define MEM_SIZE /;"	d
+MULTIPLE	simpletron.h	/^#define MULTIPLE /;"	d
+OPERAND_DEFAULT	simpletron.h	/^#define OPERAND_DEFAULT /;"	d
+OPERATION_CODE_DEFAULT	simpletron.h	/^#define OPERATION_CODE_DEFAULT /;"	d
+READ	simpletron.h	/^#define READ /;"	d
+SENTINEL_VALUE	simpletron.h	/^#define SENTINEL_VALUE /;"	d
+SOURCES	Makefile	/^SOURCES=simpletron.c$/;"	m
+STORE	simpletron.h	/^#define STORE /;"	d
+SUBTRACT	simpletron.h	/^#define SUBTRACT /;"	d
+SUCCESS	simpletron.h	/^#define SUCCESS /;"	d
+WRITE	simpletron.h	/^#define WRITE /;"	d
+cleanup	simpletron.c	/^int cleanup(int status) {$/;"	f
+counter	simpletron.h	/^typedef uint16_t counter; \/\/ stores counter variables such as instructionCounter$/;"	t
+dump	simpletron.c	/^void dump(void) {$/;"	f
+execute	simpletron.c	/^int execute(void) {$/;"	f
+init	simpletron.c	/^int init(void) {$/;"	f
+load	simpletron.c	/^int load(void) {$/;"	f
+main	simpletron.c	/^int main(void) {$/;"	f
+mem	simpletron.h	/^typedef int mem; \/\/ used to store memory$/;"	t
+op	simpletron.h	/^typedef uint16_t op; \/\/ used for operation variables such as operationCode and operand$/;"	t
