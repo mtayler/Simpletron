@@ -4,7 +4,7 @@
 
 #include "simpletron.h"
 
-#define HEADER_FORMAT ( "        0x%03X   0x%03X   0x%03X   0x%03X   0x%03X   0x%03X   0x%03X   0x%03X   0x%03X   0x%03X" )
+#define HEADER_FORMAT ( "        0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X   0x00%X" )
 
 /* Globals */
 static mem memory[MEM_SIZE];
@@ -74,7 +74,7 @@ int execute(void) {
 		instructionRegister = memory[instructionCounter];
 
 		operationCode = instructionRegister / 0x1000;
-		operand = instructionRegister % 0x1000;
+		operand = instructionRegister % 0X1000;
 
 		/* Used for exponential expression */
 		switch (operationCode) {
@@ -86,7 +86,7 @@ int execute(void) {
 				++instructionCounter;
 				break;
 			case WRITE:
-				printf("0x%03X : %05X\n", operand, memory[operand]);
+				printf("0x%03X : 0x%05X\n", operand, memory[operand]);
 				++instructionCounter;
 				break;
 			case NEWLINE:
@@ -215,9 +215,9 @@ void dump(void) {
 	counter address;
 	counter line = 0;
 
-	printf(HEADER_FORMAT, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+	printf(HEADER_FORMAT, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0xA, 0xB, 0xC, 0xD, 0xE, 0xF);
 	for (address = 0; address < MEM_SIZE; address++) {
-		if (address % 10 == 0) {
+		if (address % 0x10 == 0) {
 			printf("\n0x%03X", line);
 			line += 0x10;
 		}
